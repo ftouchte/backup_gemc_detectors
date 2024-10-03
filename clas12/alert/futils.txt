@@ -1,0 +1,8 @@
+RUN 
+/w/hallb-scshelf2102/clas12/users/touchte/gemc/source/gemc alert.gcard -OUTPUT='hipo, ten_events.hipo' -N=10 -USE_GUI=0 
+COPY
+scp ./output/* touchte-codjo@ssh-ubuntu1.ijclab.in2p3.fr:/homeijclab/touchte-codjo/Bureau/output
+ROOT
+source /w/hallb-scshelf2102/clas12/users/touchte/root/bin/thisroot.csh
+OUTPUT
+rm ./output/*  && ls -ll ./output
